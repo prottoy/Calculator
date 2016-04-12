@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B736EFF41CBBBFBB0010EC1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B736EFF31CBBBFBB0010EC1A /* main.m */; };
+		B736EFFC1CBC05D60010EC1A /* NSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = B736EFFB1CBC05D60010EC1A /* NSMutableArray+Stack.m */; };
+		B736EFFF1CBC07150010EC1A /* NSMutableArray+Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = B736EFFE1CBC07150010EC1A /* NSMutableArray+Queue.m */; };
+		B7A0DB9A1CBC1DFA00A342C8 /* RPNCalc.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A0DB991CBC1DFA00A342C8 /* RPNCalc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B736EFF01CBBBFBB0010EC1A /* Calculator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Calculator; sourceTree = BUILT_PRODUCTS_DIR; };
+		B736EFF01CBBBFBB0010EC1A /* calc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = calc; sourceTree = BUILT_PRODUCTS_DIR; };
 		B736EFF31CBBBFBB0010EC1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B736EFFA1CBC05D60010EC1A /* NSMutableArray+Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Stack.h"; sourceTree = "<group>"; };
+		B736EFFB1CBC05D60010EC1A /* NSMutableArray+Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Stack.m"; sourceTree = "<group>"; };
+		B736EFFD1CBC07150010EC1A /* NSMutableArray+Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Queue.h"; sourceTree = "<group>"; };
+		B736EFFE1CBC07150010EC1A /* NSMutableArray+Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Queue.m"; sourceTree = "<group>"; };
+		B7A0DB981CBC1DFA00A342C8 /* RPNCalc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPNCalc.h; sourceTree = "<group>"; };
+		B7A0DB991CBC1DFA00A342C8 /* RPNCalc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPNCalc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +58,7 @@
 		B736EFF11CBBBFBB0010EC1A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B736EFF01CBBBFBB0010EC1A /* Calculator */,
+				B736EFF01CBBBFBB0010EC1A /* calc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				B736EFF31CBBBFBB0010EC1A /* main.m */,
+				B7A0DB981CBC1DFA00A342C8 /* RPNCalc.h */,
+				B7A0DB991CBC1DFA00A342C8 /* RPNCalc.m */,
+				B736EFFA1CBC05D60010EC1A /* NSMutableArray+Stack.h */,
+				B736EFFB1CBC05D60010EC1A /* NSMutableArray+Stack.m */,
+				B736EFFD1CBC07150010EC1A /* NSMutableArray+Queue.h */,
+				B736EFFE1CBC07150010EC1A /* NSMutableArray+Queue.m */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -65,9 +80,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B736EFEF1CBBBFBB0010EC1A /* Calculator */ = {
+		B736EFEF1CBBBFBB0010EC1A /* calc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B736EFF71CBBBFBB0010EC1A /* Build configuration list for PBXNativeTarget "Calculator" */;
+			buildConfigurationList = B736EFF71CBBBFBB0010EC1A /* Build configuration list for PBXNativeTarget "calc" */;
 			buildPhases = (
 				B736EFEC1CBBBFBB0010EC1A /* Sources */,
 				B736EFED1CBBBFBB0010EC1A /* Frameworks */,
@@ -77,9 +92,9 @@
 			);
 			dependencies = (
 			);
-			name = Calculator;
+			name = calc;
 			productName = Calculator;
-			productReference = B736EFF01CBBBFBB0010EC1A /* Calculator */;
+			productReference = B736EFF01CBBBFBB0010EC1A /* calc */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -96,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B736EFEB1CBBBFBB0010EC1A /* Build configuration list for PBXProject "Calculator" */;
+			buildConfigurationList = B736EFEB1CBBBFBB0010EC1A /* Build configuration list for PBXProject "calc" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -108,7 +123,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B736EFEF1CBBBFBB0010EC1A /* Calculator */,
+				B736EFEF1CBBBFBB0010EC1A /* calc */,
 			);
 		};
 /* End PBXProject section */
@@ -118,7 +133,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B736EFFC1CBC05D60010EC1A /* NSMutableArray+Stack.m in Sources */,
 				B736EFF41CBBBFBB0010EC1A /* main.m in Sources */,
+				B736EFFF1CBC07150010EC1A /* NSMutableArray+Queue.m in Sources */,
+				B7A0DB9A1CBC1DFA00A342C8 /* RPNCalc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,21 +227,21 @@
 		B736EFF81CBBBFBB0010EC1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = calc;
 			};
 			name = Debug;
 		};
 		B736EFF91CBBBFBB0010EC1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = calc;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B736EFEB1CBBBFBB0010EC1A /* Build configuration list for PBXProject "Calculator" */ = {
+		B736EFEB1CBBBFBB0010EC1A /* Build configuration list for PBXProject "calc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B736EFF51CBBBFBB0010EC1A /* Debug */,
@@ -232,13 +250,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B736EFF71CBBBFBB0010EC1A /* Build configuration list for PBXNativeTarget "Calculator" */ = {
+		B736EFF71CBBBFBB0010EC1A /* Build configuration list for PBXNativeTarget "calc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B736EFF81CBBBFBB0010EC1A /* Debug */,
 				B736EFF91CBBBFBB0010EC1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,11 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RPNCalc.h"
 
-int main(int argc, const char * argv[]) {
+int main(int argc, const char **argv) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        NSMutableArray *args = [NSMutableArray new];
+        
+        for (int i = 1; i < argc; i++){
+            [args addObject:@(argv[i])];
+        }
+        
+        RPNCalc *calc = [[RPNCalc alloc]init];
+        NSLog(@"%d", [calc calculate:args]);
     }
     return 0;
 }
